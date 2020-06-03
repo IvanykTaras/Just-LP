@@ -1,0 +1,293 @@
+/* GLOBAL PROPERTIES */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+samp{
+    font-family: sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.contiki{
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+    margin-bottom: auto;
+}
+
+.gradient_line{
+    border-bottom: 15px solid transparent;
+    border-image: url(../img/gradient_line_01.jpg) 30 round;
+}
+
+
+/* HEADER SECTION */
+.header{
+    position: relative;
+    padding-top: 25px;
+    background-image: url(../img/bg_header-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.promotion_text{
+    margin-left: 21%;
+    margin-top: 8px;
+}
+
+.promotion_text__head{
+    line-height: 1.3;
+    font-size: 38px;
+    color: #000;
+    font-weight: bold;
+}
+
+.promotion_text__description{
+    line-height: 1.3;
+    font-size: 38px;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.autopilot{
+    position: absolute;
+    top: 400px;
+    right: 150px;
+}
+
+.powerboots{
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+}
+
+
+/* PRICE OF PROMOTION PROPERTIES */
+.gift_card__first_circle{
+    background-color: #b30f79;
+    height: 185px;
+    width: 185px;
+    text-align: center;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 27px;
+    padding: 23px;
+    box-sizing: border-box;
+    margin-left: 170px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.gift_card__first_circle samp{
+    font-size: 34px;
+    font-weight: 700;
+}
+
+
+.gift_card__first_circle img{
+    position: absolute;
+    left: -120px;
+    top: 70px;
+}
+
+
+/*PROMOTION DETAILS SECOND SECTION*/
+.promotion_details{
+    padding: 57px 40px;   
+}
+
+.promotion_details .contiki{
+    padding-left: 70px;
+}
+
+.promotion_details .promotion_text__head{
+    font-size: 36px;
+}
+
+.promotion_details .promotion_text__description{
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.promotion_details__time{
+    font-size: 24px;
+    font-weight: 300;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 40px;
+}
+
+.promotion_details__rules_button{
+    background-color: #8b357c;
+    font-size: 30px;
+    color: #fff;
+    border: 0;
+    padding: 13px;
+    margin-right: 5px;
+}
+
+.promotion_details__examples_button{
+    background-color: #a40e6f;
+    font-size: 30px;
+    color: #fff;
+    border: 0;
+    padding: 13px;
+}
+
+
+/*GOOD PROPERTIES THIRD SECTION*/
+.good_properties{
+    border-image: url(../img/gradient_line2_02.jpg) 30 round;
+}
+
+.good_properties__line{
+    display: flex;
+    max-height: 350px;
+}
+
+.good_properties__line img{
+    height: 100%;
+    width: 100%;
+}
+
+.good_properties__line h3{
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.good_properties__line p{
+    margin-left: 70px;
+    margin-top: 15px;
+    font-size: 20px;
+    max-width: 450px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.good_properties__line__left{
+    width: 50%;
+}
+.good_properties__line__right{
+    width: 50%;
+}
+
+
+
+/*RESPONSIVE STYLES*/
+@media screen and (max-width: 600px){
+    
+    
+    /* BUTTONS FROM PROMOTION DETAILS SECOND SECTION */ 
+    .promotion_details__rules_button{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .promotion_details__examples_button{
+        width: 100%;
+    }
+} 
+
+
+
+@media screen and (max-width: 900px) {
+    
+    /*HEADER SECTION*/
+    .header h2,.header p{
+        font-size: 20px;
+    }
+    
+    .header .gift_card__first_circle {
+        font-size: 20px;
+        margin-left: 40%;
+    }
+    
+    .autopilot{
+        position: absolute;
+        top: 6px;
+        right: 6px;
+    }
+    
+    .header .logo img{
+        height: 80px;
+    }
+    
+    
+    /* PROMOTION DETAILS SECTION */
+    .promotion_details .contiki{
+        padding-left: 0;
+    }
+    
+    .promotion_details .promotion_text__head{
+        font-size: 18px;
+    }
+    .promotion_details .promotion_text__description{
+        font-size: 18px;
+    }
+    .promotion_details .promotion_details__time{
+        font-size: 15px;
+    }
+    
+    .promotion_details__rules_button{
+        font-size: 20px;
+    }
+    
+    .promotion_details__examples_button{
+        font-size: 20px;
+    }
+    
+    
+    /*GOOD PROPERTIES SECTION*/
+    .good_properties__line{
+        flex-direction: column;
+        max-height: 100%;
+    }
+    
+    .good_properties__line__left{
+        width: 100%;
+    }
+    
+    .good_properties__line__right{
+        width: 100%;
+    }
+    
+    .good_properties__line h3{
+        margin: 20px 20px;
+        font-size: 20px;
+    }
+    
+    .good_properties__line p{
+        margin: 20px 20px;
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 1201px){
+    /* HEADER SECTION */
+    .header{
+        background-size: auto;
+        background-position: center;
+    }
+}
+
